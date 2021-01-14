@@ -12,6 +12,8 @@ dat2grid.grid2netcdf ingests arrays and converts them to netCDF4 file format.
 inserfromnoaa.py creates dimensions, variables and attributes directly from a netDCF avaiable from NOAA. This was used
 test the netCDF structure and ensure we were writing these correctly from our own data.
 
+interpolateMet reads directly from met data stored in MS SQL and creates the 3 dimensional numpy arrays
+
 For obvious reasons, the credentials_db.py file is not stored here. This must be obtained
 separately and used in your local environment to work. Otherwise, the interpolation will not run. This file
 also has credential access to S3 bucket on AWS. It is advisable to work directly with S3 objects to ensure that
